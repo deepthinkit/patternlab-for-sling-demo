@@ -1,0 +1,16 @@
+<section class="c-section">
+	{{# sectionTitle}}
+	<h2 class="c-section__title">${sectionTitle}</h2>
+	{{/ sectionTitle}
+
+	{{> organisms-media-list}
+	{{# textButton}
+	{{> atoms-text-button}
+	{{/ textButton}
+	{{# pagination}
+	{{> molecules-pagination}
+	{{/ pagination}
+	{{# overlay}
+		{{> molecules-overlay}
+	{{/ overlay}}
+</section><!--end section-->

@@ -1,0 +1,195 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+
+
+
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+
+/*
+ * Brand Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+ $color-brand-green: #5C832F;
+ $color-brand-green-dark: #3b4a20;
+
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ */
+$color-white: #fff;
+$color-gray-02: #f7f9f9;
+$color-gray-15: #d9d9d9;
+$color-gray-35: #a5a5a5;
+$color-gray-50: #808080;
+$color-gray-65: #595959;
+$color-gray-73: #444444;
+$color-gray-87: #222222;
+$color-black: #000;
+
+$color-dim-50: rgba(0,0,0,0.5);
+$color-dim-70: rgba(0,0,0,0.7);
+
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+$color-utility-positive: #03804d;
+$color-utility-postitive-subtle: #d4f3e6;
+$color-utility-caution: #a59b15;
+$color-utility-caution-subtle: #fffecf;
+$color-utility-negative: #b12a0b;
+$color-utility-negative-subtle: #fdded8;
+$color-utility-neutral: #0192d0;
+$color-utility-neutral-subtle: #d3f2ff;
+
+ /*
+  * Text Colors
+  * 1) These are non-linked text colors, such as body copy.
+  */
+$color-text: $color-black;
+$color-text-subtle: $color-gray-50;
+
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+$color-heading: $color-black;
+$color-heading-accent: $color-gray-87;
+
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+$color-text-link: $color-gray-87;
+$color-text-link-hover: $color-gray-73;
+$color-text-link-visited: $color-black;
+$color-text-link-active: $color-gray-87;
+
+$color-text-link-light: $color-white;
+$color-text-link-light-hover: $color-white;
+$color-text-link-light-visited: $color-white;
+
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+$color-border: $color-gray-50;
+
+
+
+
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+$font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$font-secondary : Georgia, Times, "Times New Roman", serif;
+
+$font-size-small : 0.75rem;
+$font-size-small-2 : 0.875rem;
+$font-size-med : 1rem;
+$font-size-med-2: 1.0625rem;
+$font-size-large : 1.4375rem;
+
+
+
+
+
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+$l-max-width: 80em;
+
+/**
+ * Spacing Defaults
+ */
+$space : 1em;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-quad : $space*4;
+$space-half : $space/2;
+$pad : 1em;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+
+
+
+
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+
+/**
+ * Border Width
+ */
+$border-med: 3px;
+$border-thick: 7px;
+
+/**
+ * Border Radius
+ */
+$border-radius: 6px;
+
+
+
+
+
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+
+/**
+ * Animation Duration
+ */
+$anim-speed-quick: 0.2s;
+
+/**
+ * Animation Easing
+ */
+$anim-ease: ease;
+
+
+
+
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+
+/**
+ * Breakpoints
+ */
+$bp-small : 24em;
+$bp-small-2 : 29.75em;
+$bp-small-3 : 39.8em;
+$bp-med : 46.8em;
+$bp-med-2 : 48em;
+$bp-large : 50em;
+$bp-large-2 : 66em;
+$bp-xl : 73em;
+$bp-xxl : 89em;
+$bp-xxxl : 93em;

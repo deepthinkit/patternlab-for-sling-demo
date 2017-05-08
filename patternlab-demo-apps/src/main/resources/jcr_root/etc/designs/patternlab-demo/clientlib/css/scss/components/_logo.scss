@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
+
+.c-logo {
+	display: block;
+	max-width: 200px;
+
+	.c-box__header & {
+		max-width: 12em;
+		margin: 0 auto;
+	}
+}
+
+.c-logo-link {
+	display: inline-block;
+	padding: 0.2rem 1rem;
+}

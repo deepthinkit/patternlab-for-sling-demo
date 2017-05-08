@@ -1,0 +1,15 @@
+<template data-sly-template.tile="${@ link, styleModifier, number, headline, progress, overlay}">
+	<a href="${link}" class="c-block-tile c-block-tile--${styleModifier}">
+		<sly data-sly-test="${progress}"
+			 data-sly-use.progresstemplate="patternlab-demo/atoms/feedback/progress.html"
+			 data-sly-call="${progresstemplate.progress @ max=progress.max, progressValue=progress.progressValue, label=progress.label}">
+		</sly>
+		<span class="c-block-tile__value">${number}</span>
+		<h2 class="c-block-tile__label">${headline}</h2>
+	</a>
+	<sly data-sly-test="${overlay}"
+		 data-sly-use.template="patternlab-demo/molecules/messaging/overlay.html"
+		 data-sly-call="${template.overlay @ message=overlay.message, action=overlay.action}">
+	</sly>
+</template>
+

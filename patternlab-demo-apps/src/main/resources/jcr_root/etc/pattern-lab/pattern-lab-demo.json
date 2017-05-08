@@ -1,0 +1,8 @@
+{
+  "sling:resourceType" : "patternlab/components/page",
+  "appsPath" : "/apps/patternlab-demo",
+  "headerCss" : ["/etc/designs/patternlab-demo/clientlib/css/style.css", "/etc/designs/patternlab-demo/clientlib/css/pattern-scaffolding.css"],
+  "headerJs" : [],
+  "footerCss" : [],
+  "footerJs" : []
+}

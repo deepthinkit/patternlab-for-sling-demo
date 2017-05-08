@@ -1,0 +1,33 @@
+{{> organisms-header}
+<main role="main">
+
+	{{> organisms-page-header}
+
+	<div class="l l--two-col">
+		<div class="l-main">
+			<section class="section">
+
+				{{> organisms-text-blob}
+
+				{{# form}
+
+				<hr />
+
+				{{> organisms-stacked-form}
+				{{/ form}
+			</section>
+		</div><!--end .l-main-->
+
+		<div class="l-sidebar">
+			{{# featuredPosts}
+			{{> organisms-section-media-list}
+			{{/ featuredPosts}}
+			{{# featuredPeople}
+			{{> organisms-section-media-list}
+			{{/ featuredPeople}}
+		</div><!--end .l-sidebar-->
+
+	</div><!--end l--two-col-->
+
+</main>
+{{> organisms-footer}

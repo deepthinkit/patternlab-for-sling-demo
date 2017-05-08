@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    #MESSAGING
+\*------------------------------------*/
+
+/**
+ * Alert
+ */
+.alert {
+	text-align: center;
+	padding: 0 1rem;
+	background: $color-gray-02;
+	overflow: hidden;
+	font-size: 1em;
+	animation: slideDown 2s forwards;
+	
+	a {
+		color: inherit;
+		text-decoration: underline;
+	}
+}
+
+/**
+ * Error alert
+ */
+.alert--error {
+	color: $color-utility-negative;
+	background: $color-utility-negative-subtle;
+}
+
+/**
+ * Success alert
+ */
+.alert--success {
+	color: $color-utility-positive;
+	background: $color-utility-postitive-subtle;
+}
+
+/**
+ * Warning alert
+ */
+.alert--warning {
+	color: $color-utility-caution;
+	background: $color-utility-caution-subtle;
+}
+
+/**
+ * Info alert
+ */
+.alert--info {
+	color: $color-utility-neutral;
+	background: $color-utility-neutral-subtle;
+}
+
+/**
+ * Slidedown animation
+ */
+@keyframes slideDown {
+  0%   {
+	  max-height: 0;
+	  padding: 0;
+  }
+
+  100% {
+	  padding: 1rem;
+	  max-height: 12em;
+  }
+}
+
+
+/**
+ * Overlay
+ */
+ .c-overlay {
+	display: block;
+	padding: 1em;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: $border-radius;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: $border-radius;
+	text-align: center;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	&--is-hidden {
+		display: none;
+	}
+	
+	.c-tile-grid__primary & {
+		position: absolute;
+	}
+	
+	.c-tile-list__item & {
+		position: absolute;
+	}
+	
+	.c-section & {
+		position: absolute;
+	}
+ }
+ 
+ /**
+ * Overlay Intro
+ */
+ .c-overlay__intro {
+	 font-size: 1.5rem;
+	 color: $color-white;
+ }
+ 

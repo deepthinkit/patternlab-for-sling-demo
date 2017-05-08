@@ -1,0 +1,244 @@
+/*------------------------------------*\
+    #BLOCKS
+\*------------------------------------*/
+/**
+ * 1) Blocks are collections of text and/or images/media working together as a unit.
+ */
+
+
+
+
+
+/*------------------------------------*\
+	#HERO BLOCK
+\*------------------------------------*/
+.c-block-hero {
+    display: block;
+    position: relative;
+}
+
+/**
+ * Hero Image
+ * 1) This is the primary hero image that runs full-bleed across the layout
+ */
+.c-block-hero__img {
+    display: block;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+/**
+ * Hero Headline
+ * 1) This sits overtop of the hero image when space permits
+ */
+.c-block-hero__headline {
+    background: $color-dim-50;
+    color: $color-white;
+    padding: 1rem;
+    font-size: 2.6rem;
+    transition: all $anim-speed-quick $anim-ease;
+
+    @media all and (min-width: $bp-large) {
+        position: absolute;
+        top: 3rem;
+        left: 1rem;
+        width: 50%;
+        border-radius: $border-radius;
+    }
+
+    .c-block-hero:hover &, .c-block-hero:focus & {
+        background: $color-gray-73;
+    }
+ }
+
+
+
+
+
+/*------------------------------------*\
+	#MEDIA BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) Media block contains an image (or some other media) on the left
+ * and text on the right.
+ * 2) For more info, read http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ */
+.c-block-media {
+	display: flex;
+	transition: all $anim-speed-quick $anim-ease;
+
+	&:hover, &:focus {
+		.c-block-media__headline {
+			color: $color-brand-green;
+		}
+	}
+
+	&--small {
+		font-size: $font-size-small-2;
+	}
+}
+
+/**
+ * Media Container
+ * 1) This is the container that holds the block image (or media)
+ */
+.c-block-media__media {
+	width: 20%;
+	max-width: 11em;
+	margin-right: 1rem;
+
+	.c-block-media--small & {
+		max-width: 3.5em;
+		margin-right: 0.5rem;
+	}
+
+	@media all and (min-width: $bp-med) {
+		width: 50%;
+		margin-right: 1.5rem;
+	}
+}
+
+.c-block-media__img {
+	border-radius: $border-radius;
+}
+
+.c-block-media__headline {
+	margin-bottom: 0.2em;
+	color: $color-gray-65;
+	transition: all $anim-speed-quick $anim-ease;
+
+	.c-block-media--small & {
+		font-size: $font-size-med;
+	}
+}
+
+.c-block-media__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.c-block-media__excerpt {
+	color: $color-gray-35;
+	transition: all $anim-speed-quick $anim-ease;
+
+	.c-block-media--small & {
+		margin-bottom: 0;
+		line-height: 1.2;
+	}
+}
+
+
+/*------------------------------------*\
+	#TOUT BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) The tout block contains an image and headline overlayed over the image.
+ */
+.c-block-tout {
+    display: inline-block;
+	margin-bottom: $space-half;
+	position: relative;
+    overflow: hidden;
+    border-radius: $border-radius;
+}
+ 
+/**
+ *  Tout image
+ */
+ 
+ .c-block-tout__img {
+	 display: block;
+ }
+
+/**
+ *  Tout headline
+ */
+.c-block-tout__headline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $color-dim-50;
+    color: $color-white;
+    padding: $pad-half;
+    font-size: 1.4rem;
+    transition: all $anim-speed-quick $anim-ease;
+
+    .c-block-tout:hover &, .c-block-tout:focus & {
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+/*------------------------------------*\
+	#TILE BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) The tile block contains a span and headline overlayed on a background
+ */
+.c-block-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: $color-dim-50;
+    color: $color-white;
+    border-radius: $border-radius;
+    padding: 1em 1em;
+    text-align: center;
+    overflow: hidden;
+    transition: all $anim-speed-quick $anim-ease;
+
+    &:hover, &:focus {
+        background: $color-dim-70;
+        color: $color-white;
+    }
+
+    @media all and (min-width: 55rem) {
+	    padding: 4em 1em;
+    }
+}
+
+/**
+ * Featured tile block
+ */
+.c-block-tile--featured {
+	min-height: 200px;
+}
+
+/**
+ * Tile block value
+ */
+.c-block-tile__value {
+	font-size: 1.5rem;
+    line-height: 1.2;
+
+	/**
+	 * Tile value when inside featured tile parent selector
+	 */
+	.c-block-tile--featured & {
+	    font-size: 2.5rem;
+
+	    @media all and (min-width: $bp-med) {
+	    	font-size: 5rem;
+		}
+    }
+
+    @media all and (min-width: 55rem) {
+		font-size: 3rem;
+    }
+}
+
+.c-block-tile__label {
+    color: $color-gray-15;
+    font-weight: normal;
+    font-size: $font-size-med;
+}

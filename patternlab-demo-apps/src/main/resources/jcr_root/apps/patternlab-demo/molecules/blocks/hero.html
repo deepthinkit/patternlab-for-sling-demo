@@ -1,0 +1,7 @@
+<template data-sly-template.hero="${@ link, img, headline}">
+	<a href="${link}" class="c-block-hero">
+		<sly data-sly-use.image="patternlab-demo/atoms/images/image.html" data-sly-call="${image.hero @ img=img}"></sly>
+		<h2 class="c-block-hero__headline">${headline}</h2>
+	</a>
+</template>
+

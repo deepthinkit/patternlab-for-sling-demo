@@ -1,0 +1,23 @@
+{{> organisms-header}
+<main role="main">
+
+	{{> organisms-page-header}
+
+	<div class="l l--two-col">
+		<div class="l-main">
+			{{# latestPosts}
+			{{> organisms-section-media-list}
+			{{/ latestPosts}
+		</div><!--end .l-main-->
+
+		<div class="l-sidebar">
+			{{# featuredPeople}
+			{{> organisms-section-media-list}
+			{{/ featuredPeople}
+			{{# featuredHikes}
+			{{> organisms-section-media-list}
+			{{/ featuredHikes}
+		</div><!--end .l-sidebar-->
+	</div><!--end .l-two-col-->
+</main>
+{{> organisms-footer}

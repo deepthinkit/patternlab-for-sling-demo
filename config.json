@@ -1,0 +1,10 @@
+{
+  "paths" : {
+    "source" : {
+      "css" : "./aem-patternlab-demo-apps/src/main/content/jcr_root/etc/designs/patternlab-demo/clientlib/css"
+    },
+    "destination" : {
+      "css" : "./aem-patternlab-demo-apps/src/main/content/jcr_root/etc/designs/patternlab-demo/clientlib/css"
+    }
+  }
+}

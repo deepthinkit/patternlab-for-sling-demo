@@ -1,0 +1,6 @@
+<template data-sly-template.blockquote="${@ quoteText, quoteSource }">
+	<blockquote class="c-quote">
+		<div class="c-quote__text">${quoteText}</div>
+			<cite class="c-quote__cite" data-sly-test="${quoteSource}">${quoteSource}</cite>
+	</blockquote>
+</template>

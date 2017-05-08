@@ -1,0 +1,290 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * Layout container
+ */
+.l {
+	max-width: $l-max-width;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #TEMPLATES
+\*------------------------------------*/
+
+/**
+ * 2 column layout
+ */
+.l--two-col {
+	display: flex;
+	flex-direction: column;
+
+	.l-main {
+		@media all and (min-width: $bp-large) {
+			width: 70%;
+			padding-right: $pad;
+		}
+	}
+
+	/**
+	 * Sidebar
+	 */
+	.l-sidebar {
+		
+		@media all and (min-width:$bp-small-3) {
+			display: flex;
+		}
+
+
+		@media all and (min-width: $bp-large) {
+			flex-direction: column;
+			width: 30%;
+			padding: 0 0 0 $pad;
+		}
+	}
+	
+	@media all and (min-width: $bp-large) {
+		flex-direction: row;
+	}
+}
+
+
+/*------------------------------------*\
+    #GRIDS
+\*------------------------------------*/
+
+/**
+ * Grid
+ */
+.g {
+	overflow: hidden;
+	margin: 0 (-$pad-half);
+}
+
+/**
+ * Grid item
+ */
+.gi {
+	padding: $pad-half;
+
+	img {
+		display: block;
+	}
+
+	@media all and (min-width: $bp-med) {
+		float: left;
+	}
+}
+
+/**
+ * 2 up grid
+ */
+.g-2up {
+	@media all and (min-width: $bp-med) {
+		> .gi {
+			float: left;
+			width: 50%;
+
+			&:nth-of-type(odd) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/**
+ * Grid side by side
+ */
+.g-half {
+	> .gi {
+		float: left;
+		width: 50%;
+
+		&:nth-of-type(odd) {
+			clear: left;
+		}
+	}
+}
+
+/**
+ * 3 up grid
+ */
+.g-3up {
+	@media all and (min-width: $bp-med) {
+		> .gi {
+			float: left;
+			width: 50%;
+
+			&:nth-of-type(2n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-large) {
+		> .gi {
+			width: 33.3333333%;
+
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/**
+ * 4 up grid
+ */
+.g-4up {
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			float: left;
+			width: 50%;
+
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-large) {
+		>.gi {
+			width: 25%;
+
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/**
+ * Quarter grid always displayed side by side
+ */
+.g-quarter {
+	> .gi {
+		float: left;
+		width: 24%;
+
+		&:nth-of-type(4n+1) {
+			clear: left;
+		}
+	}
+}
+
+/**
+ * Grid max 4 up
+ */
+.g-max4 {
+
+	@media all and (min-width: $bp-small-2) {
+		>.gi {
+			float: left;
+			width: 50%;
+
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-small-3) {
+		>.gi {
+			width: 33.3333333%;
+
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-large) {
+		>.gi {
+			width: 25%;
+
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+/**
+ * Grid max of 5 up
+ */
+.g-max5 {
+
+	>.gi {
+		float: left;
+		width: 50%;
+
+		&:nth-of-type(2n+1) {
+			clear: both;
+		}
+	}
+
+	@media all and (min-width: $bp-small-3) {
+		>.gi {
+			width: 33.3333333%;
+
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-med) {
+		>.gi {
+			width: 25%;
+
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	@media all and (min-width: $bp-med-2) {
+		>.gi {
+			width: 20%;
+
+			&:nth-of-type(4n+1) {
+				clear: none;
+			}
+
+			&:nth-of-type(5n+1) {
+				clear: left;
+			}
+		}
+	}
+}

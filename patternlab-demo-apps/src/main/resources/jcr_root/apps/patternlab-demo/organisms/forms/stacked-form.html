@@ -1,0 +1,16 @@
+<form class="c-form c-form--stacked" method="post" action="${link.pages-dashboard}">
+	{{# formTitle}
+	<h2 class="c-form__title c-section__title">${formTitle}</h2>
+	{{/ formTitle}
+	{{# fields}
+	{{> molecules-field}
+	{{/ fields}
+
+	{{# textarea}
+	{{> molecules-textarea}
+	{{/ textarea}
+
+	<div class="c-form__actions">
+		{{> atoms-button}
+	</div>
+</form><!--end c-form--stacked-->

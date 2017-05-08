@@ -1,0 +1,7 @@
+<template data-sly-template.field="${@ id, label, type, placeholder, value, fieldNote}">
+	<div class="c-field">
+		<label for="${id}" class="c-field__label">${label}</label>
+		<input id="${id}" type="${type}" placeholder="${placeholder}" value="${value}" />
+		<span class="c-field__note" data-sly-test="${fieldNote}">${fieldNote}</span>
+	</div>
+</template>

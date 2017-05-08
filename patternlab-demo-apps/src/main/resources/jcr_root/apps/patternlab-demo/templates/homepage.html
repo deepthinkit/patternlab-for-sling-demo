@@ -1,0 +1,27 @@
+{{> organisms-header}
+<main role="main">
+
+	{{# hero}
+		{{> molecules-block-hero}
+	{{/ hero}}
+
+	<div class="l">
+		{{> organisms-tout-list}
+	</div>
+
+	<div class="l l--two-col">
+		<div class="l-main">
+			{{# latestPosts}
+			{{> organisms-section-media-list}
+			{{/ latestPosts}
+		</div><!--end .l-main-->
+
+		<div class="l-sidebar">
+			{{# featuredPeople}
+			{{> organisms-section-media-list}
+			{{/ featuredPeople}
+		</div><!--end .l-sidebar-->
+
+	</div><!--end l--two-col-->
+</main>
+{{> organisms-footer}

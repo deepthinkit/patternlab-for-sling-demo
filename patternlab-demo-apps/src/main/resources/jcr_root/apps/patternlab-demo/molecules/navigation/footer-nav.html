@@ -1,0 +1,7 @@
+<template data-sly-template.footernav="${@ items}">
+	<nav class="c-footer-nav">
+		<ul class="c-footer-nav__list" data-sly-list="${items}">
+			<li class="c-footer-nav__item"><a href="${item.link}" class="c-footer-nav__link">${item.label}</a></li>
+		</ul>
+	</nav>
+</template>
