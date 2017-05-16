@@ -1,0 +1,20 @@
+{
+  "logoLink" : {
+    "link": "#",
+    "logo": {
+      "company": {
+        "name": "HikeTracker"
+      },
+      "style": "c-logo-link__img"
+    }
+  },
+  "primaryNav" : {
+    "items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+  },
+  "search" : {
+    "label" :"Search the site",
+    "placeholder" :"Search the site"
+  },
+  "menuLabel" : "Menu",
+  "searchLabel" : "Search"
+}

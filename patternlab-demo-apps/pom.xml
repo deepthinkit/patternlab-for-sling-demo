@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.patternlab.sling.demo</groupId>
+        <groupId>org.kciecierski.patternlab.sling.demo</groupId>
         <artifactId>patternlab-sling-demo-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.patternlab.sling.demo.apps</groupId>
+    <groupId>org.kciecierski.patternlab.sling.demo.apps</groupId>
     <artifactId>patternlab-sling-demo-apps</artifactId>
     <packaging>bundle</packaging>
     <name>Pattern Lab For Sling Demo</name>
@@ -24,17 +24,9 @@
                 <configuration>
                     <instructions>
                         <Private-Package></Private-Package>
-                        <Import-Package>
-                            org.patternlab.sling.core.model.breadcrumb,version=0.0.1,
-                            org.patternlab.sling.core.model.category,version=0.0.1,
-                            org.patternlab.sling.core.model.component.pattern,version=0.0.1,
-                            org.patternlab.sling.core.model.page,version=0.0.1,
-                            org.patternlab.sling.core.model.pattern,version=0.0.1,
-                            org.patternlab.sling.core.service.api.category,version=0.0.1,
-                            org.patternlab.sling.core.utils,version=0.0.1
-                        </Import-Package>
                         <Sling-Initial-Content>
-                            jcr_root/apps/patternlab-demo;overwrite:=true;uninstall:=true;path:=/apps/patternlab-demo,
+                            jcr_root/apps/patternlab-demo.xml;overwrite:=true;uninstall:=true;ignoreImportProviders:=json;path:=/apps,
+                            jcr_root/apps/patternlab-demo;overwrite:=false;uninstall:=true;ignoreImportProviders:=json;path:=/apps/patternlab-demo,
                             jcr_root/etc/designs/patternlab-demo;overwrite:=true;uninstall:=true;path:=/etc/designs/patternlab-demo,
                             jcr_root/etc/pattern-lab;overwrite:=true;uninstall:=true;path:=/etc/pattern-lab
                         </Sling-Initial-Content>

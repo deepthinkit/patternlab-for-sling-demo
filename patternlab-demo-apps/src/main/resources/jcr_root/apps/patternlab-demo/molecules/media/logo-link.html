@@ -1,3 +1,5 @@
-<a href="${link.pages-homepage}" class="c-logo-link">
-	{{> atoms-logo:c-logo-link__img}
-</a><!-- end c-logo -->
+<template data-sly-template.logolink="${@ link, logo}">
+	<a href="${link}" class="c-logo-link" data-sly-use.logo="patternlab-demo/atoms/images/logo.html"
+	   data-sly-call="${logo.logo @ company=logo.company, style=logo.style }">
+	</a>
+</template>

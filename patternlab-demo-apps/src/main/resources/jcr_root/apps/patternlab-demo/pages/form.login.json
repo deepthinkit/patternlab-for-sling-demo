@@ -1,0 +1,32 @@
+{
+    "logo" : {
+        "company" :{"name" : "Company name"},
+        "style" : "c-logo"
+    },
+    "stackedForm" : {
+        "fields" : [
+            {
+                "id": "username",
+                "label": "Username",
+                "type": "text",
+                "placeholder": "Username or email address",
+                "value": "",
+                "note": "Enter your username or email address"
+            },
+            {
+                "id": "password",
+                "label": "Password",
+                "type": "password",
+                "placeholder": "Password",
+                "value": "",
+                "note": "Minimum of 6 characters. <a href='#'>Forgot password?</a>"
+            }
+        ],
+        "button" : {
+            "class": "",
+            "link": "#",
+            "text": "Register"
+        },
+        "actionLink": "#"
+    }
+}

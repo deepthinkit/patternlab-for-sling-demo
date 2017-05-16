@@ -1,10 +1,16 @@
-<footer class="c-footer" role="contentinfo">
+<template data-sly-template.footer="${@ logoFooterLink, footernav, info, year, company}">
+	<footer class="c-footer" role="contentinfo">
 
-	<div class="l">
-		{{> molecules-logo-footer-link}
-		{{> molecules-footer-nav}
-		<p class="c-footer__info">This is a demonstration of what's possible with <a href="http://patternlab.io" rel="external">Pattern Lab</a>. <a href="http://patternlab.io/download.html">Download Pattern Lab</a>, check out the <a href="http://patternlab.io/docs/">documentation</a>, or learn more about <a href="http://atomicdesign.bradfrost.com/">atomic design</a>.</p>
-		<p class="copyright">&copy; ${year} ${company.name}. All rights reserved.</p>
-	</div><!-- end l -->
+		<div class="l">
+			<sly data-sly-use.pattern="patternlab-demo/molecules/media/logo-footer-link.html"
+				 data-sly-call="${pattern.logofooterlink @ link=logoFooterLink.link, logo=logoFooterLink.logo, style=logoFooterLink.style}"></sly>
 
-</footer><!-- end c-footer -->
+			<sly data-sly-use.pattern="patternlab-demo/molecules/navigation/footer-nav.html"
+				 data-sly-call="${pattern.footernav @ items=footernav.items}"></sly>
+
+			<p class="c-footer__info">${info @ context='html'}</p>
+			<p class="copyright">&copy; ${year} ${company.name}. All rights reserved.</p>
+		</div><!-- end l -->
+
+	</footer><!-- end c-footer -->
+</template>

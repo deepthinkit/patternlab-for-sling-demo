@@ -1,5 +1,5 @@
-<template data-sly-template.media="${@ link, styleModifier, headline, img, excerpt}">
-	<a href="${link}" class="c-block-media c-block-media--${styleModifier}">
+<template data-sly-template.media="${@ link, style, headline, img, excerpt}">
+	<a href="${link}" class="c-block-media c-block-media--${style}">
 
 		<div class="c-block-media__media" data-sly-use.image="patternlab-demo/atoms/images/image.html" data-sly-call="${image.hero @ img=img}"></div>
 

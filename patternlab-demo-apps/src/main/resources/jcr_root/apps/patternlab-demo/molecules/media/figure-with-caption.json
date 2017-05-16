@@ -1,0 +1,6 @@
+{
+  "landscape" : {
+    "img" : {"src" : "/etc/designs/patternlab-demo/clientlib/images/fpo_16x9.png", "alt" : "landscape"}
+  },
+  "caption" : "This is an example of an image with a caption. Photo captions, also known as cutlines, are a few lines of text used to explain or elaborate on published photographs."
+}

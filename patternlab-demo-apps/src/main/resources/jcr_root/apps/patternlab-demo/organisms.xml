@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+    <primaryNodeType>sling:OrderedFolder</primaryNodeType>
+    <node><name>global</name></node>
+    <node><name>forms</name></node>
+    <node><name>lists</name></node>
+    <node><name>sections</name></node>
+    <node><name>text</name></node>
+</node>

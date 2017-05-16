@@ -1,0 +1,31 @@
+<template data-sly-template.homepage="${@ header, hero, toutList, latestPosts, featuredPeople, footer}">
+	<sly data-sly-use.pattern="patternlab-demo/organisms/global/header.html"
+		 data-sly-call="${pattern.header @ logoLink=header.logoLink, menuLabel=header.menuLabel, searchLabel=header.searchLabel, primaryNav=header.primaryNav, search=header.search}"></sly>
+	<main role="main">
+
+		<sly data-sly-use.pattern="patternlab-demo/molecules/blocks/hero.html"
+			 data-sly-call="${pattern.hero @  link=hero.link, img=hero.img, headline=hero.headline}"></sly>
+
+		<div class="l">
+			<sly data-sly-use.pattern="patternlab-demo/organisms/lists/tout-list.html"
+				 data-sly-call="${pattern.toutlist @  toutList=toutList}"></sly>
+		</div>
+
+		<div class="l l--two-col">
+			<div  class="l-main" data-sly-use.pattern="patternlab-demo/organisms/sections/section-media-list.html"
+				 data-sly-call="${pattern.sectionmedialist @ sectionTitle=latestPosts.sectionTitle,
+					 mediaList=latestPosts.mediaList,
+					 textButton=latestPosts.textButton,
+					 overlay=latestPosts.overlay}"></div><!--end .l-main-->
+			<div  class="l-sidebar" data-sly-use.pattern="patternlab-demo/organisms/sections/section-media-list.html"
+				  data-sly-call="${pattern.sectionmedialist @ sectionTitle=featuredPeople.sectionTitle,
+					 mediaList=featuredPeople.mediaList,
+					 textButton=featuredPeople.textButton,
+					 overlay=featuredPeople.overlay}"></div><!--end .l-sidebar-->
+
+		</div><!--end l--two-col-->
+	</main>
+	<sly data-sly-use.pattern="patternlab-demo/organisms/global/footer.html"
+	 data-sly-call="${pattern.footer @  logoFooterLink=footer.logoFooterLink, footernav=footer.footernav, info=footer.info, year=footer.year, company=footer.company}"></sly>
+</template>
+

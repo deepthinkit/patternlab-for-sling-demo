@@ -1,0 +1,127 @@
+{
+	"header" : {
+		"logoLink" : {
+			"link": "#",
+			"logo": {
+				"company": {
+					"name": "HikeTracker"
+				},
+				"style": "c-logo-link__img"
+			}
+		},
+		"primaryNav" : {
+			"items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+		},
+		"search" : {
+			"label" :"Search the site",
+			"placeholder" :"Search the site"
+		},
+		"menuLabel" : "Menu",
+		"searchLabel" : "Search"
+	},
+	"pageHeader" : {
+		"pageTitle" : "About Us"
+	},
+	"textBlob" : {
+		"htmlText" : "<p>Hike Tracker prides itself on being the best in the hiking business. Established in 2016, Hike Tracker has grown substantially into one of the top contenders in the business. Our applications provide some of the most in depth data that you can get your hands on.<p>We live and breathe hiking just like you. Our researchers find the latest and greatest in the hiking world and provide tricks, tips, and secrets to our customers.</p><img src='/etc/designs/patternlab-demo/clientlib/images/sample/hiking.jpg' class='c-text-passage__img' />"
+	},
+	"sectionTitle": "Latest posts",
+	"featuredPosts" : {
+		"sectionTitle" : "Featured Posts",
+		"mediaList": [
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-mtns.jpg",
+					"alt": "mountain range"
+				},
+				"style" : "small",
+				"headline" : "Where to Find Hiking Equipment",
+				"excerpt" : "A list of locations where quality hiking equipment is sold"
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-trees2.jpg",
+					"alt": "forest of trees"
+				},
+				"style" : "small",
+				"headline" :  "What to Do During a Sasquatch Attack",
+				"excerpt" : "In case you are attacked by a Sasquatch, try this..."
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-hiker.jpg",
+					"alt": "hiker with backpack"
+				},
+				"style" : "small",
+				"headline" : "Top 10 Worst People to Hike With",
+				"excerpt" : "If you are planning a hike, don't go with these people"
+			}
+		],
+		"text" : "View All Posts"
+	},
+	"featuredPeople" : {
+		"sectionTitle" : "Friends",
+		"mediaList": [
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/avatar4.jpg",
+					"alt": "avatar"
+				},
+				"style" : "small",
+				"headline"  : "Danny DeVito",
+				"excerpt" : "Neptune Township, NJ"
+			},
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/avatar6.jpg",
+					"alt": "avatar"
+				},
+				"style" : "small",
+				"headline"  : "Sally Jessy Raphael",
+				"excerpt" : "Easton, PA"
+			},
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/avatar5.jpg",
+					"alt": "avatar"
+				},
+				"style" : "small",
+				"headline"  : "Charlie Chaplin",
+				"excerpt" : "London, UK"
+			}
+		],
+		"textButton" : {
+			"class" : "",
+			"text" : "View All Hikers",
+			"link" : "#"
+		}
+	},
+	"footer" : {
+		"logofooterlink" : {
+			"link": "#",
+			"logo": {
+				"company": {
+					"name": "HikeTracker"
+				},
+				"style": "c-logo-footer-link__img"
+			}
+		},
+		"footernav" : {
+			"items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+		},
+		"info" : "This is a demonstration of what's possible with <a href=\"http://patternlab.io\" rel=\"external\">Pattern Lab</a>. <a href=\"http://patternlab.io/download.html\">Download Pattern Lab</a>, check out the <a href=\"http://patternlab.io/docs/\">documentation</a>, or learn more about <a href=\"http://atomicdesign.bradfrost.com/\">atomic design</a>.",
+		"year" : "2017",
+		"company" : {
+			"name" : "HikeTracker"
+		}
+	}
+}

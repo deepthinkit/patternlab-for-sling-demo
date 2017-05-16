@@ -1,0 +1,19 @@
+{
+  "logofooterlink" : {
+    "link": "#",
+    "logo": {
+      "company": {
+        "name": "HikeTracker"
+      },
+      "style": "c-logo-footer-link__img"
+    }
+  },
+  "footernav" : {
+    "items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+  },
+  "info" : "This is a demonstration of what's possible with <a href=\"http://patternlab.io\" rel=\"external\">Pattern Lab</a>. <a href=\"http://patternlab.io/download.html\">Download Pattern Lab</a>, check out the <a href=\"http://patternlab.io/docs/\">documentation</a>, or learn more about <a href=\"http://atomicdesign.bradfrost.com/\">atomic design</a>.",
+  "year" : "2017",
+  "company" : {
+    "name" : "HikeTracker"
+  }
+}

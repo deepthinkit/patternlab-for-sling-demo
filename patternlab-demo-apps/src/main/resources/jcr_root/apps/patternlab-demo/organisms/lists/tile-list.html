@@ -1,7 +1,9 @@
-<ul class="c-tile-list">
-	{{# tileList}
-	<li class="c-tile-list__item">
-		{{> molecules-block-tile}
-	</li>
-	{{/ tileList}
-</ul><!--end tout-list-->
+<template data-sly-template.tilelist="${@ tileList}">
+	<ul class="c-tile-list">
+		<sly data-sly-list="${tileList}">
+			<li class="c-tile-list__item"
+				data-sly-use.pattern="patternlab-demo/molecules/blocks/tile.html"
+				data-sly-call="${pattern.tile @ link=item.link, style=item.style, number=item.number, headline=item.headline, progress=item.progress, overlay=item.overlay}"></li>
+		</sly>
+	</ul>
+</template>

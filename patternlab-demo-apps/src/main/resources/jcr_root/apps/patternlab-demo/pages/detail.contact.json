@@ -1,0 +1,141 @@
+{
+	"header" : {
+		"logoLink" : {
+			"link": "#",
+			"logo": {
+				"company": {
+					"name": "HikeTracker"
+				},
+				"style": "c-logo-link__img"
+			}
+		},
+		"primaryNav" : {
+			"items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+		},
+		"search" : {
+			"label" :"Search the site",
+			"placeholder" :"Search the site"
+		},
+		"menuLabel" : "Menu",
+		"searchLabel" : "Search"
+	},
+	"pageHeader" : {
+		"pageTitle" : "Contact Us"
+	},
+	"textBlob" : {
+		"htmlText" : "<img src='/etc/designs/patternlab-demo/clientlib/images/sample/waterfall.jpg' class='c-text-passage__img' /><p>Hike Tracker wants to hear from you. Whether it is positive or negative, we look forward to your feedback so we can improve our company and products. If you have any questions, comments, or concerns, feel free to fill out the form below and we will get back to you as soon as possible. Thank you.</p>"
+	},
+	"stackedForm" : {
+		"fields" :  [
+			{
+				"label" : "Name",
+				"placeholder" : "i.e. John Smith"
+			},
+			{
+				"label" : "Email",
+				"placeholder" : "name@email.com"
+			}
+		],
+		"text" : {
+			"label" : "Message"
+		},
+		"button": {
+			"class": "",
+			"link": "#",
+			"text": "Add Comment"
+		}
+	},
+
+	"featuredPosts" : {
+		"sectionTitle" : "Featured Posts",
+		"mediaList": [
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-mtns3.jpg",
+					"alt": "red mountains"
+				},
+				"headline" : "Hardest Hikes in the World",
+				"excerpt" : "A detailed outlook at the most difficult hikes on earth"
+
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-trees.jpg",
+					"alt": "road with trees"
+				},
+				"headline" : "How to Survive in the Woods",
+				"excerpt" : "Tips and suggestions on survival in the forest"
+
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-mtns2.jpg",
+					"alt": "mountain and lake"
+				},
+				"headline" : "Top 10 Best Locations to Hike in the U.S.",
+				"excerpt" : "A list of the top 10 locations to hike in the United States"
+
+			}
+		],
+		"text" : "View All Posts"
+	},
+	"featuredPeople" : {
+		"sectionTitle" : "Featured Hikers",
+		"mediaList": [
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/avatar1.jpg",
+					"alt": "avatar"
+				},
+				"headline" : "Jimmy Stewart",
+				"excerpt" : "Indiana, PA"
+
+			},
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/avatar2.jpg",
+					"alt": "avatar"
+				},
+				"headline" : "Janice Kimble",
+				"excerpt"  : "Los Angeles, CA"
+			},
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/avatar3.jpg",
+					"alt": "avatar"
+				},
+				"headline" : "Salvadore Dali XIV",
+				"excerpt": "Sheboygan, WI"
+			}
+		],
+		"text" : "View All Hikers"
+	},
+	"footer" : {
+		"logofooterlink" : {
+			"link": "#",
+			"logo": {
+				"company": {
+					"name": "HikeTracker"
+				},
+				"style": "c-logo-footer-link__img"
+			}
+		},
+		"footernav" : {
+			"items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+		},
+		"info" : "This is a demonstration of what's possible with <a href=\"http://patternlab.io\" rel=\"external\">Pattern Lab</a>. <a href=\"http://patternlab.io/download.html\">Download Pattern Lab</a>, check out the <a href=\"http://patternlab.io/docs/\">documentation</a>, or learn more about <a href=\"http://atomicdesign.bradfrost.com/\">atomic design</a>.",
+		"year" : "2017",
+		"company" : {
+			"name" : "HikeTracker"
+		}
+	}
+}

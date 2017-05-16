@@ -1,5 +1,5 @@
-<template data-sly-template.tile="${@ link, styleModifier, number, headline, progress, overlay}">
-	<a href="${link}" class="c-block-tile c-block-tile--${styleModifier}">
+<template data-sly-template.tile="${@ link, style, number, headline, progress, overlay}">
+	<a href="${link}" class="c-block-tile c-block-tile--${style}">
 		<sly data-sly-test="${progress}"
 			 data-sly-use.progresstemplate="patternlab-demo/atoms/feedback/progress.html"
 			 data-sly-call="${progresstemplate.progress @ max=progress.max, progressValue=progress.progressValue, label=progress.label}">

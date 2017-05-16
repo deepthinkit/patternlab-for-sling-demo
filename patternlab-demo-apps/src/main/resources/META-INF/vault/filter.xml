@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/patternlab-demo"/>
+    <filter root="/apps/patternlab-demo.xml"/>
     <filter root="/etc/designs/patternlab-demo"/>
     <filter root="/etc/pattern-lab/pattern-lab-demo.json"/>
 </workspaceFilter>

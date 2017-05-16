@@ -1,5 +1,5 @@
-<div class="s-text-passage">
-
-	{${htmlText}}
-
-</div><!--end s-cms-content-->
+<template data-sly-template.textblob="${@ htmlText}">
+	<div class="s-text-passage">
+		${htmlText @ context='html'}
+	</div>
+</template>

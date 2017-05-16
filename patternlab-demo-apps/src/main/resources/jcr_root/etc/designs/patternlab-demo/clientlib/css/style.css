@@ -585,7 +585,7 @@ abbr {
 .c-block-hero__img {
   display: block;
   width: 100%;
-  max-height: 50vh;
+  max-height: 100vh;
   object-fit: cover; }
 
 /**
@@ -1528,7 +1528,7 @@ abbr {
  * Section block
  */
 .c-tile-grid {
-  background: url(../../images/sample/hero-mountains.jpg) no-repeat 50% 50% #444444;
+  background: url(../images/sample/hero-mountains.jpg) no-repeat 50% 50% #444444;
   background-size: cover; }
 
 .c-tile-grid__inner {

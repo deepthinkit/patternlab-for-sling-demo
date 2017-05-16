@@ -1,5 +1,5 @@
-<template data-sly-template.alert="${@ text}">
-	<div class="alert alert--${styleModifier}">
-		${text}
+<template data-sly-template.alert="${@ text, style}">
+	<div class="alert alert--${style}">
+		${text @ context='html'}
 	</div>
 </template>

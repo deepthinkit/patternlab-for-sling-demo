@@ -1,0 +1,244 @@
+{
+	"header" : {
+		"logoLink" : {
+			"link": "#",
+			"logo": {
+				"company": {
+					"name": "HikeTracker"
+				},
+				"style": "c-logo-link__img"
+			}
+		},
+		"primaryNav" : {
+			"items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+		},
+		"search" : {
+			"label" :"Search the site",
+			"placeholder" :"Search the site"
+		},
+		"menuLabel" : "Menu",
+		"searchLabel" : "Search"
+	},
+	"alert" : {
+		"text" : "Welcome to the HikeTracker dashboard! This will keep you updated with all of your accomplishments and relevant hiking blog posts. Happy hiking!",
+		"style" : "info"
+	},
+	"sectionBlock" : {
+		"featuredTile": {
+			"style": "featured",
+			"number": "0",
+			"headline": {
+				"short": "Feet of Elevation Gain"
+			},
+			"progress": {
+				"max": "100",
+				"progressValue": "0",
+				"label": "Progress: 0%"
+			},
+			"overlay": {
+				"message": "Let's go on a hike and climb in elevation",
+				"action": "Find a Hike"
+			}
+		},
+		"tileList": [
+			{
+				"number": "0",
+				"headline": {
+					"short": "National Parks"
+				},
+				"progress": {
+					"max": "100",
+					"progressValue": "0",
+					"label": "Progress: 0%"
+				},
+				"overlay": {
+					"message": "What National Parks have you visited?",
+					"action": "Find a National Park"
+				}
+			},
+			{
+				"number": "0",
+				"headline": {
+					"short": "Hikes"
+				},
+				"progress": {
+					"max": "100",
+					"progressValue": "0",
+					"label": "Progress: 0%"
+				},
+				"overlay": {
+					"message": "Been on a hike recently?",
+					"action": "Log Your First Hike"
+				}
+			},
+			{
+				"number": "0",
+				"headline": {
+					"short": "Calories Burned"
+				},
+				"progress": {
+					"max": "100",
+					"progressValue": "0",
+					"label": "Progress: 0%"
+				},
+				"overlay": {
+					"message": "Trying to stay healthy?",
+					"action": "Track Calorie Count"
+				}
+			},
+			{
+				"number": "0",
+				"headline": {
+					"short": "Steps"
+				},
+				"progress": {
+					"max": "100",
+					"progressValue": "0",
+					"label": "Progress: 0%"
+				},
+				"overlay": {
+					"message": "Counting steps?",
+					"action": "Connect Your Fitbit"
+				}
+			}
+		]
+	},
+	"featuredChallenges" : {
+		"sectionTitle" : "Challenges",
+		"mediaList" : [
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-mtns3.jpg",
+					"alt": "red mountains"
+				},
+				"headline" : "Hardest Hikes in the World",
+				"excerpt" : "The world delivers a multitude of daunting hikes. How difficult? We have listed some of the most strenuous hikes in the world."
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-trees.jpg",
+					"alt": "road with trees"
+				},
+				"headline" : "Speed Hiking",
+				"excerpt" : "If a scenic hike seems too slow for you and you are hiking to get more of an excercise, try speed hiking. This will not only decrease your time but increase your stamina."
+
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-mtns2.jpg",
+					"alt": "mountain and lake"
+				},
+				"headline" : "Lake Tahoe",
+				"excerpt" : "Lake Tahoe is one of the most beautiful places to visit in the U.S. with stoic mountains surrounding it on all sides. Here is a list of the most difficult challenges when it comes to hiking in Tahoe."
+			},
+			{
+				"link" : "#",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-mtns.jpg",
+					"alt": "mountain range"
+				},
+				"headline" : "Hike the Sierra Nevadas",
+				"excerpt" : "The Sierra Nevadas contains some of the best national parks in the U.S., including Yosemite and Sequoia National Parks. You may find some of these epic hikes to your liking."
+			},
+			{
+				"link" : "",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/sample/blog-trees2.jpg",
+					"alt": "forest of trees"
+				},
+				"headline"  : "Olympic National Park",
+				"excerpt" : "This Washington national park gets little attention when it comes to popular U.S. landmarks, but Olympic National Park provides some of the most difficult hikes here."
+			}
+		],
+		"pagination" : {
+			"items" : [
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				},
+				{
+					"link" : "#"
+				}
+			]
+		}
+	},
+	"featuredPeople" : {
+		"overlay" : {
+			"message" : "Challenge new and old friends to a hike!",
+			"action" : "Connect to your Friends"
+		},
+		"sectionTitle" : "Friends",
+		"mediaList": [
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/fpo_avatar.png",
+					"alt": "avatar"
+				},
+				"headline" : "Your Best Friend",
+				"excerpt" : "City, State"
+			},
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/fpo_avatar.png",
+					"alt": "avatar"
+				},
+				"headline" :  "Your Neighbor",
+				"excerpt": "City, State"
+			},
+			{
+				"link" : "",
+				"style" : "small",
+				"img" : {
+					"src": "/etc/designs/patternlab-demo/clientlib/images/fpo_avatar.png",
+					"alt": "avatar"
+				},
+				"headline" : "Your Brother",
+				"excerpt" : "City, State"
+			}
+		],
+		"text" : "Find a Friend"
+	},
+	"footer" : {
+		"logofooterlink" : {
+			"link": "#",
+			"logo": {
+				"company": {
+					"name": "HikeTracker"
+				},
+				"style": "c-logo-footer-link__img"
+			}
+		},
+		"footernav" : {
+			"items" : [{"link" : "#", "label" : "About"}, {"link" : "#", "label" : "Blog"}, {"link" : "#", "label" : "Contact"}, {"link" : "#", "label" : "Login"}]
+		},
+		"info" : "This is a demonstration of what's possible with <a href=\"http://patternlab.io\" rel=\"external\">Pattern Lab</a>. <a href=\"http://patternlab.io/download.html\">Download Pattern Lab</a>, check out the <a href=\"http://patternlab.io/docs/\">documentation</a>, or learn more about <a href=\"http://atomicdesign.bradfrost.com/\">atomic design</a>.",
+		"year" : "2017",
+		"company" : {
+			"name" : "HikeTracker"
+		}
+	}
+}

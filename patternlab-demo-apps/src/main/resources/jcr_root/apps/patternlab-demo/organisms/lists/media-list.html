@@ -1,5 +1,9 @@
-<ul class="c-media-list">
-	{{# mediaList}
-	<li class="c-media-list__item">{{> molecules-block-media}</li>
-	{{/ mediaList}
-</ul>
+<template data-sly-template.medialist="${@ mediaList}">
+	<ul class="c-media-list">
+		<sly data-sly-list="${mediaList}">
+			<li class="c-media-list__item"
+				data-sly-use.pattern="patternlab-demo/molecules/blocks/media.html"
+				data-sly-call="${pattern.media @ link=item.link, style=item.style, headline=item.headline, img=item.img, excerpt=item.excerpt}"></li>
+		</sly>
+	</ul>
+</template>

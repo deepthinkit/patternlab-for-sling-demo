@@ -1,3 +1,5 @@
-<a href="${link.pages-homepage}" class="c-logo-footer-link">
-	{{> atoms-logo-reversed:c-logo-footer-link__img}
-</a><!-- end c-logo -->
+<template data-sly-template.logofooterlink="${@ link, logo}">
+<a href="${link}" class="c-logo-footer-link" data-sly-use.logo="patternlab-demo/atoms/images/logo.html"
+   data-sly-call="${logo.logoreversed @ company=logo.company, style=logo.style }">
+</a>
+</template>

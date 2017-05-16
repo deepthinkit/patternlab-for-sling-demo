@@ -1,16 +1,16 @@
-<section class="c-section">
-	{{# sectionTitle}}
-	<h2 class="c-section__title">${sectionTitle}</h2>
-	{{/ sectionTitle}
-
-	{{> organisms-media-list}
-	{{# textButton}
-	{{> atoms-text-button}
-	{{/ textButton}
-	{{# pagination}
-	{{> molecules-pagination}
-	{{/ pagination}
-	{{# overlay}
-		{{> molecules-overlay}
-	{{/ overlay}}
-</section><!--end section-->
+<template data-sly-template.sectionmedialist="${@ sectionTitle, mediaList, textButton, pagination, overlay}">
+    <section class="c-section">
+        <h2 data-sly-test="${sectionTitle}" class="c-section__title">${sectionTitle}</h2>
+        <sly data-sly-use.pattern="patternlab-demo/organisms/lists/media-list.html"
+             data-sly-call="${pattern.medialist @ mediaList=mediaList}"></sly>
+        <sly data-sly-test="${textButton}"
+             data-sly-use.pattern="patternlab-demo/atoms/buttons/text-button.html"
+             data-sly-call="${pattern.textbutton @  class=textButton.class, text=textButton.text, link=textButton.link}"></sly>
+        <sly data-sly-test="${pagination}"
+             data-sly-use.pattern="patternlab-demo/molecules/navigation/pagination.html"
+             data-sly-call="${pattern.pagination @  items=pagination.items}"></sly>
+        <sly data-sly-test="${overlay}"
+             data-sly-use.pattern="patternlab-demo/molecules/messaging/overlay.html"
+             data-sly-call="${pattern.overlay @  message=overlay.message, action=overlay.action}"></sly>
+    </section><!--end section-->
+</template>

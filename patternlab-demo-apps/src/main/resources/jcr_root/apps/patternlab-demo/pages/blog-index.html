@@ -1,0 +1,24 @@
+<template data-sly-template.blogindex="${@ header, pageTitle, latestPosts, featuredPeople, featuredHikes, footer}">
+	<sly data-sly-use.pattern="patternlab-demo/organisms/global/header.html"
+		 data-sly-call="${pattern.header @ logoLink=header.logoLink, menuLabel=header.menuLabel, searchLabel=header.searchLabel, primaryNav=header.primaryNav, search=header.search}"></sly>
+	<main role="main">
+		<sly data-sly-use.pattern="patternlab-demo/organisms/text/page-header.html"
+			 data-sly-call="${pattern.pageheader @ pageTitle=pageTitle}"></sly>
+		<div class="l l--two-col">
+			<div class="l-main"
+				 data-sly-use.pattern="patternlab-demo/organisms/sections/section-media-list.html"
+				 data-sly-call="${pattern.sectionmedialist @ sectionTitle=latestPosts.sectionTitle, mediaList=latestPosts.mediaList, textButton=latestPosts.textButton}">
+			</div><!--end .l-main-->
+
+			<div class="l-sidebar">
+				<sly data-sly-use.pattern="patternlab-demo/organisms/sections/section-media-list.html"
+					 data-sly-call="${pattern.sectionmedialist @ sectionTitle=featuredPeople.sectionTitle, mediaList=featuredPeople.mediaList, textButton=featuredPeople.textButton}"></sly>
+				<sly data-sly-use.pattern="patternlab-demo/organisms/sections/section-media-list.html"
+					 data-sly-call="${pattern.sectionmedialist @ sectionTitle=featuredHikes.sectionTitle, mediaList=featuredHikes.mediaList, textButton=featuredHikes.textButton}"></sly>
+			</div><!--end .l-sidebar-->
+		</div><!--end .l-two-col-->
+	</main>
+	<sly data-sly-use.pattern="patternlab-demo/organisms/global/footer.html"
+		 data-sly-call="${pattern.footer @  logoFooterLink=footer.logoFooterLink, footernav=footer.footernav, info=footer.info, year=footer.year, company=footer.company}"></sly>
+
+</template>

@@ -1,0 +1,27 @@
+{
+  "title": "Newsletter",
+  "fields": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Please enter name",
+      "value": "",
+      "note": "Use name and surname"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "type": "email",
+      "placeholder": "Please enter your email",
+      "value": "",
+      "note": "We will contact you on chosen email"
+    }
+  ],
+  "button": {
+    "class": "",
+    "link": "#",
+    "text": "Register"
+  },
+  "actionLink": "#"
+}

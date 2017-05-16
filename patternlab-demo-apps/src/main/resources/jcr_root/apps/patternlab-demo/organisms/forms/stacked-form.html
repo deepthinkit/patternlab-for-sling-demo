@@ -1,16 +1,16 @@
-<form class="c-form c-form--stacked" method="post" action="${link.pages-dashboard}">
-	{{# formTitle}
-	<h2 class="c-form__title c-section__title">${formTitle}</h2>
-	{{/ formTitle}
-	{{# fields}
-	{{> molecules-field}
-	{{/ fields}
+<template data-sly-template.stackedform="${@ title, fields, text, button, actionLink}">
+	<form class="c-form c-form--stacked" method="post" action="${actionLink}">
 
-	{{# textarea}
-	{{> molecules-textarea}
-	{{/ textarea}
-
-	<div class="c-form__actions">
-		{{> atoms-button}
-	</div>
-</form><!--end c-form--stacked-->
+		<h2 data-sly-test="${title}" class="c-form__title c-section__title">${title}</h2>
+		<sly data-sly-list.field="${fields}">
+			<sly data-sly-use.pattern="patternlab-demo/molecules/forms/field.html"
+			     data-sly-call="${pattern.field @ id=field.id, label=field.label, type=field.type, placeholder=field.placeholder, value=field.value, note=field.note}"></sly>
+		</sly>
+		<sly data-sly-test="${text}"
+			 data-sly-use.pattern="patternlab-demo/molecules/forms/textarea.html"
+			 data-sly-call="${pattern.textarea @ label=text.label}"></sly>
+		<div class="c-form__actions" data-sly-use.pattern="patternlab-demo/atoms/buttons/button.html"
+			 data-sly-call="${pattern.button @ class=button.class, text=button.text, link=button.link}"></sly>>
+		</div>
+	</form>
+</template>

@@ -1,7 +1,9 @@
-<ul class="c-tout-list g g-3up">
-	{{# toutList}
-	<li class="c-tout-list__item gi">
-		{{> molecules-block-tout}
-	</li>
-	{{/ toutList}
-</ul><!--end tout-list-->
+<template data-sly-template.toutlist="${@ toutList}">
+	<ul class="c-tout-list g g-3up">
+		<sly data-sly-list="${toutList}">
+			<li class="c-tout-list__item gi"
+				data-sly-use.pattern="patternlab-demo/molecules/blocks/tout.html"
+				data-sly-call="${pattern.tout @ link=item.link, headline=item.headline, img=item.img}"></li>
+		</sly>
+	</ul>
+</template>

@@ -1,14 +1,19 @@
-<header class="c-header" role="banner">
+<template data-sly-template.header="${@ logoLink, menuLabel, searchLabel, primaryNav, search}">
+	<header class="c-header" role="banner">
 
-	{{> molecules-logo-link}
+		<sly data-sly-use.pattern="patternlab-demo/molecules/media/logo-link.html"
+			 data-sly-call="${pattern.logolink @ link=logoLink.link, logo=logoLink.logo, style=logoLink.style}"></sly>
 
-	<div class="c-header__controls">
-		<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-		<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+		<div class="c-header__controls">
+			<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">${menuLabel}</span></a>
+			<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">${searchLabel}</span></a>
 
-		{{> molecules-primary-nav}
-		{{> molecules-search}
+			<sly data-sly-use.pattern="patternlab-demo/molecules/navigation/primary-nav.html"
+				 data-sly-call="${pattern.primarynav @ items=primaryNav.items}"></sly>
+			<sly data-sly-use.pattern="patternlab-demo/molecules/forms/search.html"
+				 data-sly-call="${pattern.search @ label=search.label, placeholder=search.placeholder}"></sly>
 
-	</div><!-- end c-header__controls -->
+		</div><!-- end c-header__controls -->
 
-</header><!-- end c-header -->
+	</header><!-- end c-header -->
+</template>

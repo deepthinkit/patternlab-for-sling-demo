@@ -1,15 +1,18 @@
+<template data-sly-template.tilegrid="${@ featuredTile, tileList}">
 <div class="c-tile-grid">
 	<div class="c-tile-grid__inner l">
 
-		{{# blockFeature}}
-		<div class="c-tile-grid__primary">
-			{{> molecules-block-tile}
+		<div class="c-tile-grid__primary"
+			 data-sly-test="${featuredTile}"
+			 data-sly-use.pattern="patternlab-demo/molecules/blocks/tile.html"
+			 data-sly-call="${pattern.tile @ link=featuredTile.link, style=featuredTile.style, number=featuredTile.number, headline=featuredTile.headline, progress=featuredTile.progress, overlay=featuredTile.overlay}">
 		</div><!--end c-tile-grid__primary-->
-		{{/ blockFeature}}
 
-		<div class="c-tile-grid__secondary">
-			{{> organisms-tile-list}
+		<div class="c-tile-grid__secondary"
+			 data-sly-use.pattern="patternlab-demo/organisms/lists/tile-list.html"
+			 data-sly-call="${pattern.tilelist @ tileList=tileList}">
 		</div><!--end c-tile-grid__secondary-->
 
 	</div><!--end l-->
 </div><!--end c-tile-grid-->
+</template>

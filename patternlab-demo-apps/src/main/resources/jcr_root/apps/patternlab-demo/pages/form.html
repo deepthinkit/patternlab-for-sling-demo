@@ -1,0 +1,15 @@
+<template data-sly-template.form="${@ logo, stackedForm}">
+	<main role="main">
+		<div class="c-box">
+			<div class="c-box__header"
+				 data-sly-use.pattern="patternlab-demo/atoms/images/logo.html"
+				 data-sly-call="${pattern.logo @ company=logo.company, style=logo.style}">
+			</div><!--end c-box__header-->
+
+			<div class="c-box__body"
+				 data-sly-use.pattern="patternlab-demo/organisms/forms/stacked-form.html"
+				 data-sly-call="${pattern.stackedform @ title=stackedForm.stackedForm.title, fields=stackedForm.fields, text=stackedForm.text, button=stackedForm.button, actionLink=stackedForm.actionLink}">
+			</div><!--end c-box__body-->
+		</div><!--end c-box-->
+	</main>
+</template>
