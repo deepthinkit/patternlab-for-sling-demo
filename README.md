@@ -1,10 +1,10 @@
 # Pattern Lab For Sling - demo
 
-![Pattern Lab For Sling](https://raw.githubusercontent.com/kciecierski/patternlab-for-sling/master/img/pattern-lab-for-sling.jpg)
+![Pattern Lab For Sling](https://raw.githubusercontent.com/deepthinkit/patternlab-for-sling/master/img/pattern-lab-for-sling.jpg)
 
 ## Overview
 
-This is an example Sling application codebase that can be used to demo [Pattern Lab For Sling](https://github.com/kciecierski/patternlab-for-sling)
+This is an example Sling application codebase that can be used to demo [Pattern Lab For Sling](https://github.com/deepthinkit/patternlab-for-sling)
 
 
 The HTML files present in the application was created by translating Mustache templates from [original Pattern Lab demo](https://github.com/pattern-lab/patternlab-php/releases) to HTL language.
@@ -32,7 +32,7 @@ By default, it is running on port 8080, you can change it with -p parameter:
 
     mvn clean install -PautoInstallBundle
 
-The code can be check out using this link: https://github.com/kciecierski/patternlab-for-sling.git
+The code can be check out using this link: https://github.com/deepthinkit/patternlab-for-sling.git
 
 Optionally, you can also override default connection parameters:
 

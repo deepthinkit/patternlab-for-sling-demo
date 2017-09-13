@@ -2,7 +2,7 @@
   "sling:resourceType" : "patternlab/components/page",
   "appsPath" : "/apps/patternlab-demo",
   "jcr:title" : "Pattern Lab For Sling Demo",
-  "jcr:description" : "<p class=\"sg-pattern-title\">Hi! Welcome on demo page for Pattern Lab Sling - a tool that enables prototyping base on <i>atomic design</i> methodology straight on your Sling instance. Check more details on <a href=\"https://github.com/kciecierski/patternlab-for-sling\">this page</a>.<p>",
+  "jcr:description" : "<p class=\"sg-pattern-title\">Hi! Welcome on demo page for Pattern Lab Sling - a tool that enables prototyping base on <i>atomic design</i> methodology straight on your Sling instance. Check more details on <a href=\"https://github.com/deepthinkit/patternlab-for-sling\">this page</a>.<p>",
   "headerCss" : ["/etc/designs/patternlab-demo/clientlib/css/style.css", "/etc/designs/patternlab-demo/clientlib/css/pattern-scaffolding.css"],
   "headerJs" : [],
   "footerCss" : [],
