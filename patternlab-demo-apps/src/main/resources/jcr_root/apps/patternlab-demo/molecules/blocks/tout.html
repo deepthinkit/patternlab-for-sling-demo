@@ -1,9 +1,7 @@
 <template data-sly-template.tout="${@ link, headline, img}">
-    <div>
-        <a href="${link}" class="c-block-tout">
-            <sly data-sly-use.image="patternlab-demo/atoms/images/image.html"
-                 data-sly-call="${image.landscape @ img=img}"></sly>
-            <h2 class="c-block-tout__headline">${headline}</h2>
-        </a><!-- end c-block-tout -->
-    </div>
+    <a href="${link}" class="c-block-tout">
+        <sly data-sly-use.image="patternlab-demo/atoms/images/image.html"
+             data-sly-call="${image.landscape @ img=img}"></sly>
+        <h2 class="c-block-tout__headline">${headline}</h2>
+    </a><!-- end c-block-tout -->
 </template>
