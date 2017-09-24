@@ -13,3 +13,5 @@ bin
 .vlt-sync-config.properties
 .vlt-sync.log
 .DS_Store
+patternlab-demo-apps/node
+patternlab-demo-apps/node_modules

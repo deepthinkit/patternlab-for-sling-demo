@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-slang":"^1.0.0",
+    "yargs": "^7.0.0"
+  },
+  "keywords": [
+    "Pattern Lab",
+    "Sling",
+    "Atomic Design",
+    "Node",
+    "Gulp",
+    "Javascript"
+  ],
+  "scripts": {
+    "gulp": "gulp -- "
+  },
+  "author": "Kamil Ciecierski",
+  "license": "MIT"
+}
