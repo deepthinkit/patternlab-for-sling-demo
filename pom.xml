@@ -5,13 +5,35 @@
     <groupId>org.deepthinkit.patternlab.sling.demo</groupId>
     <artifactId>patternlab-sling-demo-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Pattern Lab For Sling Demo - Parent</name>
     <description>Pattern Lab For Sling Demo Parent Module</description>
 
     <modules>
         <module>patternlab-demo-apps</module>
     </modules>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Kamil Ciecierski</name>
+            <email>kamil@ciecierski.me</email>
+            <organization>Ciecierski</organization>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/deepthinkit/patternlab-for-sling-demo.git</connection>
+        <developerConnection>scm:git:ssh://github.com:deepthinkit/patternlab-for-sling-demo.git</developerConnection>
+        <url>http://github.com/deepthinkit/patternlab-for-sling-demo/tree/master</url>
+    </scm>
 
     <properties>
         <sling.host>localhost</sling.host>
