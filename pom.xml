@@ -30,11 +30,11 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/deepthinkit/patternlab-for-sling-demo.git</connection>
-        <developerConnection>scm:git:ssh://github.com:deepthinkit/patternlab-for-sling-demo.git</developerConnection>
-        <url>http://github.com/deepthinkit/patternlab-for-sling-demo/tree/master</url>
-      <tag>patternlab-sling-demo-parent-1.0.0</tag>
-  </scm>
+        <connection>scm:git:https://github.com/deepthinkit/patternlab-for-sling-demo.git</connection>
+        <developerConnection>scm:git:git@github.com:deepthinkit/patternlab-for-sling-demo.git</developerConnection>
+        <url>http://github.com/deepthinkit/patternlab-for-sling-demo</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <sling.host>localhost</sling.host>
