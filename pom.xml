@@ -36,14 +36,6 @@
         <tag>HEAD</tag>
     </scm>
 
-    <distributionManagement>
-        <repository>
-            <id>bintray-deepthinkit-sling</id>
-            <name>deepthinkit-sling</name>
-            <url>https://api.bintray.com/maven/deepthinkit/sling/patternlab-for-sling-demo/;publish=1</url>
-        </repository>
-    </distributionManagement>
-
     <properties>
         <sling.host>localhost</sling.host>
         <sling.port>8080</sling.port>
@@ -62,6 +54,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.1</version>
                 <configuration>
+                    <goals>install</goals>
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
                     <useReleaseProfile>false</useReleaseProfile>
