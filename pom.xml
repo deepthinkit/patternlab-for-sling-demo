@@ -30,10 +30,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/deepthinkit/patternlab-for-sling-demo.git</connection>
-        <developerConnection>scm:git:git@github.com:deepthinkit/patternlab-for-sling-demo.git</developerConnection>
+        <connection>https://github.com/deepthinkit/patternlab-for-sling-demo.git</connection>
         <url>https://github.com/deepthinkit/patternlab-for-sling-demo</url>
-        <tag>HEAD</tag>
     </scm>
 
     <properties>
