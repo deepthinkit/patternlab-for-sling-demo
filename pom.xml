@@ -36,6 +36,13 @@
         <tag>HEAD</tag>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/deepthinkit/sling/patternlab-for-sling-demo</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <sling.host>localhost</sling.host>
         <sling.port>8080</sling.port>
@@ -56,6 +63,9 @@
                 <configuration>
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
                 <dependencies>
                     <dependency>
