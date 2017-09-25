@@ -32,7 +32,7 @@
     <scm>
         <connection>scm:git:https://github.com/deepthinkit/patternlab-for-sling-demo.git</connection>
         <developerConnection>scm:git:git@github.com:deepthinkit/patternlab-for-sling-demo.git</developerConnection>
-        <url>http://github.com/deepthinkit/patternlab-for-sling-demo</url>
+        <url>https://github.com/deepthinkit/patternlab-for-sling-demo</url>
         <tag>HEAD</tag>
     </scm>
 
