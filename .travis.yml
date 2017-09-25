@@ -1,0 +1,5 @@
+language: java
+matrix:
+  include:
+    - os: linux
+      jdk: openjdk8
