@@ -1,3 +1,5 @@
+<img src="https://api.travis-ci.org/deepthinkit/patternlab-for-sling-demo.svg?branch=master" />
+
 # Pattern Lab For Sling - demo
 
 ![Pattern Lab For Sling](https://raw.githubusercontent.com/deepthinkit/patternlab-for-sling/master/img/pattern-lab-for-sling.jpg)
