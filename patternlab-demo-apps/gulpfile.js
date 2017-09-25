@@ -13,6 +13,7 @@ const slingPass = argv.slingPass ? argv.slingPass : 'admin';
 const slingUser = argv.slingUser ? argv.slingUser : 'admin';
 
 const designs = 'src/main/resources/jcr_root/etc/designs/patternlab-demo/clientlib';
+const jcr_root = 'src/main/resources/jcr_root/**/*.*'
 
 gulp.task('css', function() {
     return gulp.src(designs + '/css/**/*.scss')
@@ -34,8 +35,9 @@ gulp.task('js', function ()
 });
 
 gulp.task('default',function() {
-    gulp.watch('./css/**/*.scss',['styles']);
-    gulp.watch(designs + '/dist/**/*.*', function(event) {
+    gulp.watch(designs + '/css/**/*.scss',['styles']);
+    gulp.watch(designs + '/js/scripts/*.js',['js']);
+    gulp.watch(jcr_root, function(event) {
         return gulp.src(event.path).pipe(slang({ host: slingHost, port: slingPort, username: slingUser, password: slingPass }));
     });
 });
