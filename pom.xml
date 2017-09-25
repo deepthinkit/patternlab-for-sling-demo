@@ -38,8 +38,9 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray</id>
-            <url>https://api.bintray.com/maven/deepthinkit/sling/patternlab-for-sling-demo</url>
+            <id>bintray-deepthinkit-sling</id>
+            <name>deepthinkit-sling</name>
+            <url>https://api.bintray.com/maven/deepthinkit/sling/patternlab-for-sling-demo/;publish=1</url>
         </repository>
     </distributionManagement>
 
